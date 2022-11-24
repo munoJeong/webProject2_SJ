@@ -1,0 +1,42 @@
+#footer:after{display: block; content: ""; clear: both;}
+#footer>div{margin: 0 auto; width: 1135px}
+#footer>div>p{float: right; font-size: 12px; color: #ccc;}
+#footer>div>address{position: absolute; bottom: 40px; font-size: 12px; color: #ccc;}
+#footer>div>address>span{border-right: 1px solid #ccc; padding: 0 10px;}
+#footer>div>address>span:nth-of-type(1){padding-left: 0;}
+#footer>div>address>span:nth-of-type(3){border-right: none;}
+#footer>div>address>span:nth-of-type(4){padding-left: 0; border-right: none;}
+
+#footer>div>ul>li{float: left; padding-right: 29px;}
+#footer>div>ul>li>a{font-size: 12px; color: #ccc;}
+#footer>div>ul>li>a>strong{color: #4385ff; font-weight: bold;}
+
+#footer>div>ul{margin-top: 22px;}
+
+#footer>.foot_inner{border-bottom: 1px solid #ccc; padding-bottom: 40px;}
+#footer>.foot_inner>div{float: left;}
+#footer>.foot_inner>div:last-child{float: right;}
+
+#footer>.foot_inner>div>ul>li{float: left;}
+
+/* 바는 after 이용해서 넣을수있음
+li에 position relative 후 after
+ */
+#footer>.foot_inner>div:nth-of-type(1)>ul>li{ padding: 0 20px; border-right: 1px solid #ccc;}
+#footer>.foot_inner>div:nth-of-type(1)>ul>li:nth-of-type(1){padding-left: 0;}
+#footer>.foot_inner>div:nth-of-type(1)>ul>li:nth-of-type(4){border-right: none;}
+#footer>.foot_inner>div:nth-of-type(1)>ul>li>a{font-size: 12px; font-weight: bold; color: #ccc;}
+
+#footer>div.foot_inner>div:nth-of-type(2)>ul>li>a{display: block; padding: 0 5px; width: 20px; opacity: 0; text-indent: -9999px; overflow: hidden;}
+#footer>div.foot_inner>div:nth-of-type(2)>ul>li:nth-of-type(1){background: url(../images/sns_link_ico.png) -25px 0;}
+#footer>div.foot_inner>div:nth-of-type(2)>ul>li:nth-of-type(2){background: url(../images/sns_link_ico.png) 10px 0;}
+#footer>div.foot_inner>div:nth-of-type(2)>ul>li:nth-of-type(3){background: url(../images/sns_link_ico.png) -51px 0;}
+#footer>div.foot_inner>div:nth-of-type(2)>ul>li:nth-of-type(4){background: url(../images/sns_link_ico.png) -85px 0;}
+
+/* top 버튼 */
+.btn_top{display: none; z-index: 100; position: fixed; bottom: 30px; right: 80px; width: 80px; height: 60px;
+    border:  1px solid #333;
+    background: #fff url(../images/top_btn_ico.png) no-repeat 50% 20%;
+    font-size: 13px; color: 333; text-align: center; line-height: 80px; cursor: pointer;}
+.btn_top.on{display: block;}
+.btn_top.ab{position: absolute; bottom: auto; top: -100px; right: 80px;}
